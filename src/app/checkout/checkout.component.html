@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 3%;">
+  <form id="form-box" method="get">
+  <div id="form-title">Shipping Address</div>
+
+  <div class="form-header">Address Line 1</div>
+  <input
+    type="search"
+    class="form-input"
+    id="addrs_1"
+    placeholder="Enter Your Full Address*"
+  />
+
+  <div class="form-header">Phone No</div>
+  <input type="number" class="form-input" id="addrs_2" placeholder="Enter Your Phone No*"/>
+
+  <div class="form-header">City</div>
+  <input type="text" class="form-input" id="suburb" placeholder="Enter Your City*"/>
+
+  <div class="form-header">State</div>
+  <input class="form-input" id="state" placeholder="Enter Your State*"/>
+
+  <div class="form-header">Postcode</div>
+  <input class="form-input" id="postcode" placeholder="Enter Your Postcode*"/>
+
+  <div class="mb-3">
+    <label for="disabledSelect" class="form-label">Payment Option</label>
+    <select id="disabledSelect" class="form-select">
+      <option>COD</option>
+    </select>
+  </div>
+
+  <p style="font-size: 23px;
+  margin-bottom: 2px;">Grand Total : ₹{{grandTotal}}</p>
+
+  <input class="btn" type="submit" name="next" value="NEXT" />
+</form>
+</div>
+
