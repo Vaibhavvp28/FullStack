@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a  class="nav-link" routerLinkActive="active"  href="/">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/contact">Contact US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" href="/#products">Products</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mx-auto order-0 ">
+      <a class="navbar-brand mx-auto" href="#">MedLife <i class="fas fa-clinic-medical"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+        <div style="font-size: 10px;" class="badge bg-danger">{{cartNumber}}</div>
+    </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-2 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart"> <button href="#" style="font-size: 20px;"><i class="fas fa-cart-plus fa-lg"></i>Cart
+            <div style="font-size: 10px;" class="badge bg-danger">{{cartNumber}}</div>
+          </button></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
+

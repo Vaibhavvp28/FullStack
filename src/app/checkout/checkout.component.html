@@ -1,0 +1,35 @@
+<div class="container" style="margin-top: 3%;">
+  <form id="form-box" #form="ngForm" (submit)="onSubmit(form)">
+  <div id="form-title">Shipping Address</div>
+
+  <div class="form-header">Address Line 1</div>
+  <input type="text" class="form-input" name="Address" id="address" placeholder="Enter Your Full Address*" ngModel>
+
+  <div class="form-header">Phone No</div>
+  <input type="number" class="form-input" name="PhoneNo" id="phone" placeholder="Enter Your Phone No*" ngModel>
+
+  <div class="form-header">City</div>
+  <input type="text" class="form-input" name="City" id="city" placeholder="Enter Your City*" ngModel>
+
+  <div class="form-header">State</div>
+  <input type="text" class="form-input" name="State" id="state" placeholder="Enter Your State*" ngModel>
+
+  <div class="form-header">Postcode</div>
+  <input type="number" class="form-input" name="PostCode" id="postcode" placeholder="Enter Your Postcode*" ngModel>
+
+  <div class="mb-3">
+    <label for="disabledSelect" class="form-label" ngModel>Payment Option</label>
+    <select id="disabledSelect" class="form-select">
+      <option>COD</option>
+    </select>
+  </div>
+
+  <p style="font-size: 23px;
+  margin-bottom: 2px;" name="GrandTotal" ngModel>Grand Total : ₹{{grandTotal}}</p>
+
+<div class="text-center">
+      <button (click)="emptyCart()" class="btn btn-primary mt-2">Submit</button>
+    </div>
+</form>
+</div>
+
