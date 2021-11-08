@@ -1,5 +1,6 @@
 # FullStack
 
+This is a Full Stack Web Application developed using - Angular, Node, Firebase.
 
 ![1](https://user-images.githubusercontent.com/75776014/140769799-f95fb6ba-9a74-4ed9-90a6-34792db30f95.JPG)
 
